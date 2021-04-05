@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang = "en"> 
+
+  <head> 
+
+    <meta charset = "utf-8"> 
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink- is equal to-no "> 
+    <meta name =" description "content =" "> 
+    <meta name =" author "content =" "> 
+
+    <title> cultivatedKICKS - Start Bootstrap Theme </title> 
+
+    <!-- bootstrap main CSS --> 
+    <link href = "{{ url_for('static', filename ='bootstrap.min.css') }}" rel =" stylesheet "> 
+
+    <!-- custom fonts for this template --> 
+    <link href = "{{ url_for('static', filename = 'font-awesome.min.css') }}" rel ="stylesheet" type ="text / javascript"> 
+    <link href =' http: //fonts.googleapis.com/css? family = Laura, 400,700,400italic, 700italic 'rel ="stylesheet" type = "text / javascript">
+    <link href = 'http: //fonts.googleapis.com/css? family = + Open Sans: 300italic, 400italic, 600italic, 700italic, 800italic, 400,300,600,700,800' rel = "stylesheet" type = "text / javascript"> 
+
+    <!-- custom styles for this template --> 
+    <link href = "{{ url_for('static', filename = 'clean-blog.min.css') }}" rel =" stylesheet "> 
+
+  </head> 
+
+  <body > 
+
+    <!-- navigation --> 
+    <nav class = "NAVBAR NAVBAR-expand-long NAVBAR-light fixed-top" id = "mainNav"> 
+      <div class = "container"> 
+        <a class = "navbar-brand" href = "{{ url_for('index') }}"> cultivatedKICKS </a>
+        <button class = "NAVBAR-toggle NAVBAR-toggle-right" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive" aria-controls = "navbarResponsive" aria-expanded = "false" aria- label = "Toggle navigation"> 
+          Menu 
+          <i class = "fa-fa-bars"></i> 
+        </button> 
+        <div class = "collapse NAVBAR-collapse" id = "navbarResponsive"> 
+          <ul class = "navbar- ml of self-nav "> 
+            <li class =" nav-item "> 
+              <a class="nav-link" href="{{ url_for('index') }}"> Home </a> 
+            </li> 
+            <li class = "nav-item"> 
+              <a class="nav-link" href="{{ url_for('about') }}"> About </a> 
+            </li> 
+            <li class = "nav-item ">
+              <a class="nav-link" href="{{ url_for('add') }}"> Add </a> 
+            </li> 
+          </ul> 
+        </DIV> 
+      </DIV> 
+    </nav> 
+
+    <!-- header --> 
+    <header class = "masthead" style = "background-image: url ('{{ url_for('static', filename ='about-bg.jpg') }}')"> 
+        <div class = "container"> 
+            <div class = "row"> 
+                <div class = "col-LG-8 co MD-10 MX-self"> 
+                    <div class = "page-heading"> 
+                        <H1> About Me </H1> 
+                        <span class = "subheading"> This would be what I want to get across. </span> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </header>
+
+    <!-- main content --> 
+    <div class = "container"> 
+      <div class = "row"> 
+        <div class = "col-LG-8 co MD-10 MX-self"> 
+          <p> While comfort might well still be a characteristic of sneakers, the other is street. And it’s this street cred factor that has made the shift to wearing sneakers universal, and unstoppable. As Rolo Rozay, founder of Sneaker Cartel, a Cape Town CBD premium sneaker boutique and an instrumental figure in the city’s sneaker culture, puts it: “You just can’t stop the growth, it’s something that’s there. A few years ago, you wouldn’t even be allowed in certain places with sneakers, but it has now gone beyond race and gender.” </p> 
+          <p> This sneaker explosion is evident in Cape Town and has prompted an increase in sneaker retailers in the Central City, from those offering premium sneakers to those catering for more affordable options. And they compete side by side for clients. In St Georges Mall, Side Step, Street Fever and Jack Lemkus all trade in one stretch, joining many other sneaker shops in the precinct as well as across the CBD. </p>
+          <p> While sneaker culture is on the rise, Cape Town has always been ahead of the game. Entrepreneurs who have been at the forefront of the local scene for years aren’t surprised: for decades, the Cape Town coloured community has promoted the sneaker culture that has reached new heights globally. Rolo says that’s why you see “bubbles” being held in such high regard in Cape Town. </p> 
+          <p> According to Highsnobiety, bubbles are kicks (sneakers) such as the 90s Air More Uptempo (made famous by Chicago Bulls legend, Scottie Pippen), Air Griffey Max 1 (signature sneaker of Baseball icon, Ken Griffey Jr.), and various iterations of Jordan and Air Max designs replete with visible air bubbles on the sole. </p> 
+          <p> Both Rolo and Fabian agree that, in recent years, social media has also contributed to elevating sneaker culture and sneakerheads along with their collections. Word of mouth was a powerful tool as well. Fabian adds that there’s a sense of community among sneaker lovers and even within the different retailers as they support each other. Another factor that continues to propel the growth of sneaker culture in Cape Town and the Central City is the wide range of events such as Sneaker Exchange, which takes place annually at various venues where sneakerheads buy, sell, or trade their sneakers. The event, founded by Zaid Osman and Tebogo Mogola in 2013, is now dubbed Africa’s largest sneaker expo and attracts about 4 000 attendees wherever it’s held across the country. </p> 
+        </div> 
+      </div> 
+    </div> 
+
+    <hr> 
+
+    <!-- footer --> 
+    <footer> 
+      <div class = "container"> 
+        <div class = "row"> 
+          <div class = "col-LG-8 co MD-10 MX-self"> 
+            <p class = "copyright text-muted"> Copyright &copy; cultivatedKICKS-cpt 2021 </p> 
+          </div> 
+        </div> 
+    </div>
+
+    <script src = "{{ url_for('static', filename ='jquery.min.js') }} "> </script> 
+    <script src =" {{ url_for('static', filename = 'popper.min .js') }} "> </script> 
+    <script src =" {{ url_for('static', filename = 'bootstrap.min.js') }}"> </script> 
+ 
+    <script src = "{{ url_for('static', filename ='clean-blog.min.js') }} "> </script> 
+
+  </body> 
+
+</html>
